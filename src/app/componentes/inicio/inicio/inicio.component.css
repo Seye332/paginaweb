@@ -1,0 +1,23 @@
+.contenido{
+  background-color: black;
+  padding: 3px;
+}
+
+.contenido p{
+  color: aliceblue;
+  text-align: center;
+  align-items: center;
+}
+
+.figuras p{
+  color: aliceblue;
+  text-align: left;
+}
+
+.figuras h3{
+  color: rgb(230, 230, 230);
+}
+
+.figuras h1{
+  color: white;
+}
