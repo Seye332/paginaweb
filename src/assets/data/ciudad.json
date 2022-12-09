@@ -1,0 +1,17 @@
+[
+  {
+   "Ciudad": "San Luis Potosi, SLP",
+   "Direccion": "Centro, reforma 152",
+   "Telefono": 4448559711
+  },
+  {
+   "Ciudad": "Queretaro, Qro",
+   "Direccion": "Centro, agrarios 231",
+   "Telefono": 4446512301
+  },
+  {
+    "Ciudad": "Zacatecas, Zacatecas",
+    "Direccion": "Mariano Arista 145",
+    "Telefono": 4447889588
+  }
+ ]

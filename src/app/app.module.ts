@@ -10,6 +10,9 @@ import { PagesNotFoundComponent } from './componentes/pagesNotFound/pages-not-fo
 import { GaleriaComponent } from './componentes/galeria/galeria/galeria.component';
 import { ContactoComponent } from './componentes/contacto/contacto/contacto.component';
 
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
+
 
 @NgModule({
   declarations: [
@@ -20,9 +23,11 @@ import { ContactoComponent } from './componentes/contacto/contacto/contacto.comp
     PagesNotFoundComponent,
     GaleriaComponent,
     ContactoComponent,
+
   ],
-  imports: [BrowserModule, AppRoutingModule, HttpClientModule],
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule, ReactiveFormsModule],
   providers: [],
   bootstrap: [AppComponent],
+
 })
 export class AppModule {}

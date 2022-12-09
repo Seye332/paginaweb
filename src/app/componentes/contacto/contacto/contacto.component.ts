@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CiudadService } from 'src/service/ciudad.service';
 
 @Component({
   selector: 'app-contacto',
@@ -7,7 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactoComponent implements OnInit {
 
-  constructor() { }
+  ProductoList: any[] = [];
+  constructor(private ProductSvc:CiudadService) {
+    this.ProductSvc.getAll().subscribe((resul:any)=>
+    {
+      this.ProductoList=resul;
+      console.log(resul)
+    })
+
+  }
 
   ngOnInit(): void {
   }

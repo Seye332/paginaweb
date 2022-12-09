@@ -1,31 +1,7 @@
-<table class="table table-dark table-striped">
-  <thead>
-    <tr>
-      <th scope="col">Producto</th>
-      <th scope="col">Cantidad Disponible</th>
-      <th scope="col">Precio ($) </th>
-    </tr>
-  </thead>
-  <tbody *ngFor="let item of ProductoList">
-    <tr>
-      <th scope="row">{{item.Productos}}</th>
-      <td>{{item.Cantidad}}</td>
-      <td>{{item.Precio}}</td>
-    </tr>
-
-  </tbody>
-</table>
 
 
-<div class="card text-center">
-  <div class="card-header" *ngFor="let item of ProductoList">
-      <img src="assets/img/BocinasProductos/{{item.Productos}}.png" class="card-img-top">
-      <div class="card-body">
-        <h5 class="card-title">Bocinas</h5>
-        <p class="card-text">Caracteristicas: </p>
-        <p class="card-text"> Bluetooth, radio, insertar USB y SD</p>
-        <a href="#" class="btn btn-primary">Agregar al Carrito</a>
-      </div>
-    </div>
-  </div>
-
+<div class="about-section">
+  <h1>About Us</h1>
+  <p>Somos una empresa dedicada a la venta de productos electronica</p>
+  <p>comprometidos con la calidad-precio y la satisfaccion de nuestros clientes</p>
+</div>

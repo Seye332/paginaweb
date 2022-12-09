@@ -1,1 +1,40 @@
-<p>contacto works!</p>
+<h2> ¡Tenemos nuevas sucursales!</h2>
+
+
+<table class="table table-dark table-striped">
+  <thead>
+    <tr>
+      <th scope="col">Ciudad</th>
+      <th scope="col">Direccion</th>
+      <th scope="col">Telefono</th>
+    </tr>
+  </thead>
+  <tbody *ngFor="let item of ProductoList">
+    <tr>
+      <th scope="row">{{item.Ciudad}}</th>
+      <td>{{item.Direccion}}</td>
+      <td>{{item.Telefono}}</td>
+    </tr>
+
+  </tbody>
+</table>
+
+
+  <div class="container">
+
+    <div class="cardcontainer" *ngFor="let item of ProductoList">
+        <div class="photo">
+          <img src="assets/img/Ciudades/{{item.Telefono}}.jpg">
+            <div class="photos">Photos</div>
+        </div>
+        <div class="content">
+            <p class="txt4">Visitanos en nuestras sucursales</p>
+            <p class="txt5">Abrimos de Lunes a Sabado</p>
+            <p class="txt2">En un horario de 11:00am a 8:00pm</p>
+        </div>
+        <div class="footer">
+            <p><a class="waves-effect waves-light btn" href="#">Ubicacion</a><a id="heart"><span class="like"><i class="fab fa-gratipay"></i>Like</span></a></p>
+            <p class="txt3"><i class="far fa-clock"></i>Abierto <span class="comments"><i class="fas fa-comments"></i>45 Comments</span></p>
+        </div>
+    </div>
+</div>

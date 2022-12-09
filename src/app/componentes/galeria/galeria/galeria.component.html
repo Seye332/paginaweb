@@ -1,3 +1,168 @@
+<!--
+<table class="table table-dark table-striped">
+  <thead>
+    <tr>
+      <th scope="col">Producto</th>
+      <th scope="col">Cantidad Disponible</th>
+      <th scope="col">Precio ($) </th>
+    </tr>
+  </thead>
+  <tbody *ngFor="let item of ProductoList">
+    <tr>
+      <th scope="row">{{item.Productos}}</th>
+      <td>{{item.Cantidad}}</td>
+      <td>{{item.Precio}}</td>
+    </tr>
 
-<p style="color: aliceblue;"> HOOLAAAAAAAAA</p>
+  </tbody>
+</table>
 
+
+
+
+
+  <div class="container mx-auto mt-4">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card" style="width: 18rem;">
+    <img src="assets/img/BocinasProductos/Bt - Speaker A012.png" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Bt - Speaker A012</h5>
+          <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+      <p class="card-text">Bocina Bluetooth, Radio, Insertar USB  y SD. Recargable</p>
+         <a href="#" class="btn mr-2"><i class="fas fa-link"></i> Comprar</a>
+      <a href="#" class="btn "><i class="fab fa-github"></i> Agregar al carrito</a>
+    </div>
+    </div>
+      </div>
+         <div class="col-md-4">
+  <div class="card" style="width: 18rem;">
+    <img src="assets/img/BocinasProductos/Bt - Speaker A014.png" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Bt - Speaker A014</h5>
+          <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+      <p class="card-text">Bocina Bluetooth, Radio, Insertar USB  y SD. Recargable</p>
+      <a href="#" class="btn  mr-2"><i class="fas fa-link"></i> Comprar </a>
+      <a href="#" class="btn"><i class="fab fa-github"></i> Agregar al carrito</a>
+    </div>
+    </div>
+      </div>
+            <div class="col-md-4">
+  <div class="card" style="width: 18rem;">
+    <img src="assets/img/BocinasProductos/Bt - Speaker A022.png" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Bt - Speaker A022</h5>
+          <h6 class="card-subtitle mb-2 text-muted">Bocina</h6>
+      <p class="card-text">Bocina Bluetooth, Radio, Insertar USB  y SD. Recargable</p>
+      <a href="#" class="btn mr-2"><i class="fas fa-link"></i> Comprar</a>
+      <a href="#" class="btn "><i class="fab fa-github"></i> Agregar al carrito</a>
+    </div>
+    </div>
+    </div>
+
+      <div class="col-md-4">
+        <div class="card" style="width: 18rem;">
+    <img src="assets/img/BocinasProductos/Bt - Speaker BM102.png" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Bt - Speaker BM102 </h5>
+          <h6 class="card-subtitle mb-2 text-muted">Bocina</h6>
+      <p class="card-text">Bocina Bluetooth, Radio, Insertar USB  y SD. Recargable</p>
+         <a href="#" class="btn mr-2"><i class="fas fa-link"></i> Comprar</a>
+      <a href="#" class="btn"><i class="fab fa-github"></i> Agregar al carrito</a>
+    </div>
+    </div>
+      </div>
+         <div class="col-md-4">
+  <div class="card" style="width: 18rem;">
+    <img src="assets/img/BocinasProductos/Bt - Speaker 6P.png" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Bt - Speaker 6P</h5>
+          <h6 class="card-subtitle mb-2 text-muted">Bocina</h6>
+      <p class="card-text">Bocina Bluetooth, Radio, Insertar USB  y SD. Recargable</p>
+      <a href="#" class="btn mr-2"><i class="fas fa-link"></i> Comprar</a>
+      <a href="#" class="btn"><i class="fab fa-github"></i> Agregar al carrito</a>
+    </div>
+    </div>
+      </div>
+            <div class="col-md-4">
+  <div class="card" style="width: 18rem;">
+    <img src="assets/img/BocinasProductos/Bt - Speaker 8P.png" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Bt - Speaker 8P</h5>
+          <h6 class="card-subtitle mb-2 text-muted">Bocina</h6>
+      <p class="card-text">Bocina Bluetooth, Radio, Insertar USB  y SD. Recargable</p>
+      <a href="#" class="btn mr-2"><i class="fas fa-link"></i> Comprar </a>
+      <a href="#" class="btn"><i class="fab fa-github"></i> Agregar al carrito</a>
+    </div>
+    </div>
+    </div>
+
+
+  </div>
+    </div>
+  -->
+
+
+    <div class="card">
+      <div class="card-header">
+
+      </div>
+      <div class="card-body">
+        <h1> Lista De Productos</h1>
+        <div class="table-responsive">
+          <table class="table table-primary">
+            <thead>
+              <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Modelo</th>
+                <th scope="col">Color</th>
+                <th scope="col">Acciones</th>
+              </tr>
+            </thead>
+            <tbody>
+
+              <tr *ngFor="let producto of Productos; let iControl=index" >
+                <td > {{ producto.id }} </td>
+                <td > {{ producto.modelo }} </td>
+                <td> {{ producto.color }} </td>
+                <td>
+                  <a class="btn btn-danger" (click)="borrarRegistro(producto.id,iControl)" role="button"> Borrar </a>
+
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+    <div class="card">
+      <div class="card-header">
+        Agregar Producto
+      </div>
+      <div class="card-body">
+        <form [formGroup]="formularioDeProductos" (ngSubmit)="enviarDatos()">
+            <div class="mb-3">
+              <label for="" class="form-label">Modelo</label>
+              <input type="text"
+                class="form-control" name="" formControlName="modelo" ld="" aria-describedby="helpId" placeholder="Escribe el modelo">
+            </div>
+            <div class="mb-3">
+              <label for="" class="form-label">Color</label>
+              <input type="text"
+                class="form-control" name="" formControlName="color" id="" aria-describedby="helpId" placeholder="Escribe el color disponible">
+            </div>
+            <div class="btn-group" role="group" aria-label="Button group name">
+
+              <button type="submit" class="btn btn-succes">Agregar</button>
+
+              <button type="button" class="btn btn-primary">Cancelar</button>
+            </div>
+        </form>
+      </div>
+
+    </div>
